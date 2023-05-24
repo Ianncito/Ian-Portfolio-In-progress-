@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+html{
+    background-image: url("./Logos/background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p{
+    color: rgb(201, 201, 201);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 200px;
+}
+
+#logo {
+    font-size: 30px;
+    margin-right: 200px;
+}
+
+#logo strong{
+    color: #ffffff;
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 0 10px;
+    color: black;
+}
+
+nav li button{
+    color: #7d7784;
+    padding: 8px;
+}
+
+nav li button:hover{
+    color: rgb(201, 201, 201);
+    transform: scale(1.1);
+}
+
+nav button{
+    border-radius: 7px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+section h2 {
+    font-size: 30px;
+    margin-left: 200px;
+    padding: 20px 0;
+}
+
+#sobreMi {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobreMi p{
+    margin-left: 200px;
+    width: 400px;
+    text-align: center;
+}
+
+#sobreMi img{
+    min-width: 300px;
+    height: 300px;
+    margin: 40px 200px;
+    transition: all 0.3s;
+}
+
+#sobreMi img:hover{
+    transform: scale(1.2);
+}
+
+#proyectos{
+    margin-top: 200px;
+}
+
+#proyectos h2{
+    margin-right: 200px;
+    text-align: center;
+
+}
+
+#proyectos details{
+    text-align: center;
+}
+
+
+
+#habilidades h2 {
+    margin-right: 200px;
+    text-align: center;
+}
+
+
+#habilidadesLogos {
+    text-align: center ;
+}
+
+#habilidadesLogos img {
+    width: 50px;
+    height: 50px;
+    padding: 0 5px;
+}
+
+#habilidadesLogos img:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+#proyectos img {
+    width: 300px;
+    height: 200px;
+}
+
+#proyectoHidden2{
+    display: none;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.proyecto p{
+    width: 250px;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.proyecto p strong{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+#contacto{
+    text-align: center;
+}
+
+#contacto h2{
+    margin-right: 200px;
+}
+
+#contactoLogos img{
+    width: 40px;
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+#contactoLogos img:hover{
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1150px){
+    nav{
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #logo{
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 850px){
+    #sobreMi{
+        flex-direction: column;
+    }
+
+    #sobreMi h2{
+        margin: auto;
+        text-align: center;
+    }
+
+    #sobreMi p{
+        margin: auto;
+        text-align: center;
+    }
+    
+    #sobreMi img{
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 450px){
+    nav li{
+        padding: 3px;
+    }
+    
+    #sobreMi{
+        flex-direction: column;
+    }
+
+    #sobreMi h2{
+        margin: auto;
+        text-align: center;
+    }
+
+    #sobreMi p{
+        margin: auto;
+        text-align: center;
+        width: 250px;
+    }
+    
+    #sobreMi img {
+
+        margin: 20px auto;
+    }
+
+    #proyectoHidden{
+        display: none;
+    }
+
+    #proyectoHidden2{
+        display: flex;
+    }
+
+    #proyectos h2{
+        margin: 0 auto;
+    }
+
+    .proyecto{
+        flex-direction: column;
+    }
+
+    #habilidades h2{
+        margin: auto;
+    }
+
+    #contacto h2{
+        margin: auto;
+    }
+
+}
